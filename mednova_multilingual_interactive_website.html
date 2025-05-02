@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedNova | Smart Medical Glove</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+        header { background: #0074B7; color: white; padding: 20px; text-align: center; }
+        nav { background: #005a8d; color: white; text-align: center; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 40px; transition: background 0.3s ease; }
+        section:hover { background: #eef6fb; }
+        .cta { background: #f4f4f4; text-align: center; padding: 30px; }
+        .cta a { background: #0074B7; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; transition: background 0.3s ease; }
+        .cta a:hover { background: #005a8d; }
+        footer { background: #222; color: white; text-align: center; padding: 20px; }
+        h2 { color: #0074B7; }
+        ul { list-style-type: square; padding-left: 20px; }
+        button { margin-top: 10px; padding: 8px 16px; background-color: #0074B7; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        #moreInfo { display: none; padding-top: 10px; color: #333; }
+        .form-box { background: #ffffff; padding: 20px; border-radius: 5px; max-width: 500px; margin: 0 auto; }
+        label, input, textarea { display: block; width: 100%; margin-bottom: 10px; }
+        input, textarea { padding: 8px; }
+        iframe { display: block; margin: 20px auto; max-width: 100%; }
+        .rtl { direction: rtl; text-align: right; }
+    </style>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>MedNova</h1>
+    <p>Smart Medical Glove for Hand Rehabilitation</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#product">Product</a>
+    <a href="#audience">Users</a>
+    <a href="#contact">Contact</a>
+    <a href="#arabic">العربية</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>MedNova is an Omani startup developing AI-powered wearable solutions for physical rehabilitation. Our smart glove is designed to help patients recover hand mobility with personalized therapy.</p>
+</section>
+
+<section id="product">
+    <h2>The Product</h2>
+    <p>Our smart glove combines artificial intelligence, motion sensors, and a mobile app to deliver customized rehabilitation programs. It is ideal for stroke survivors, elderly patients, and individuals with muscular disorders.</p>
+    <button onclick="toggleInfo()">Learn More</button>
+    <div id="moreInfo">
+        <p>The glove includes Bluetooth connectivity, rechargeable batteries, and real-time app integration with therapist dashboards. It is lightweight, ergonomic, and built with patient comfort in mind.</p>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section id="audience">
+    <h2>Who It's For</h2>
+    <ul>
+        <li>Stroke patients</li>
+        <li>Elderly individuals</li>
+        <li>People with muscular atrophy</li>
+        <li>Rehabilitation centers and hospitals</li>
+    </ul>
+</section>
+
+<section class="cta" id="contact">
+    <h2>Contact Us</h2>
+    <div class="form-box">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<section id="arabic" class="rtl">
+    <h2>عن الشركة</h2>
+    <p>مد نوفا هي شركة ناشئة عمانية تعمل على تطوير حلول ذكية قابلة للارتداء لإعادة التأهيل الجسدي باستخدام الذكاء الاصطناعي. القفاز الذكي لدينا يساعد المرضى على استعادة حركة اليد من خلال علاج مخصص.</p>
+
+    <h2>المنتج</h2>
+    <p>يجمع القفاز بين الذكاء الاصطناعي وأجهزة الاستشعار وتطبيق موبايل لتقديم برامج علاجية مصممة لكل حالة. مناسب لمرضى الجلطات، كبار السن، والمصابين بضمور عضلي.</p>
+
+    <h2>لمن المنتج؟</h2>
+    <ul>
+        <li>مرضى السكتات الدماغية</li>
+        <li>كبار السن</li>
+        <li>المصابون بضمور عضلي</li>
+        <li>مراكز ومستشفيات إعادة التأهيل</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 MedNova. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
